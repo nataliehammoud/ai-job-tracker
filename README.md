@@ -22,7 +22,30 @@ AI Job Tracker helps job seekers organize applications, track progress, and make
 - **Role-based access** — separate tools for users and platform admins
 
 ---
+## Screenshots
 
+### User Dashboard
+![Dashboard](docs/screenshots/01-dashboard.png)
+
+### Applications List
+![Applications](docs/screenshots/02-applications.png)
+
+### Analytics
+![Analytics](docs/screenshots/03-analytics.png)
+
+### AI Match Score (LLM + ML)
+![AI Match Score](docs/screenshots/04-ai-match.png)
+
+### Application Form with Auto Analysis
+![Application Form](docs/screenshots/05-application-form.png)
+
+### Admin Overview
+![Admin Overview](docs/screenshots/06-admin-overview.png)
+
+### Admin AI Assistant
+![Admin AI Assistant](docs/screenshots/07-admin-ai.png)
+
+---
 ## Features
 
 ### For Users
