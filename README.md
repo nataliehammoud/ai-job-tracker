@@ -12,7 +12,7 @@
 
 ---
 
-## 📌 Overview
+## Overview
 
 AI Job Tracker helps job seekers organize applications, track progress, and make smarter decisions using AI and machine learning. Unlike spreadsheets, it provides:
 
@@ -23,9 +23,9 @@ AI Job Tracker helps job seekers organize applications, track progress, and make
 
 ---
 
-## ✨ Features
+## Features
 
-### 👤 For Users
+### For Users
 
 | Feature | Description |
 |---------|-------------|
@@ -37,7 +37,7 @@ AI Job Tracker helps job seekers organize applications, track progress, and make
 | **Auto Job Analysis** | AI extracts skills, level, and ATS keywords from job descriptions |
 | **Duplicate Detection (Levenshtein)** | Warns about similar applications before saving |
 
-### 👑 For Admins
+### For Admins
 
 | Feature | Description |
 |---------|-------------|
@@ -50,12 +50,12 @@ AI Job Tracker helps job seekers organize applications, track progress, and make
 
 ---
 
-## 🧠 Machine Learning Algorithms
+## Machine Learning Algorithms
 
 Four classical ML algorithms implemented from scratch using `scikit-learn`:
 
-### 1. TF-IDF + Cosine Similarity (Resume ↔ Job Matching)
-- **Hybrid score**: `0.3 × Cosine Similarity + 0.7 × Jaccard Overlap`
+### 1. TF-IDF + Cosine Similarity (Resume to Job Matching)
+- **Hybrid score**: `0.3 x Cosine Similarity + 0.7 x Jaccard Overlap`
 - Extracts top strengths and gaps between resume and job description
 - Runs locally, deterministic, and fast — no external API needed
 
@@ -77,7 +77,7 @@ Four classical ML algorithms implemented from scratch using `scikit-learn`:
 
 ---
 
-## 🛠 Tech Stack
+## Tech Stack
 
 ### Backend
 - **FastAPI** — modern async Python framework
@@ -106,35 +106,35 @@ Four classical ML algorithms implemented from scratch using `scikit-learn`:
 
 ---
 
-## 🏗 Architecture
+## Architecture
 
 ```
 ┌────────────────────────────────────────────────┐
-│                  Frontend                       │
-│  React + TypeScript + Tailwind (port 5173)      │
+│                  Frontend                      │
+│  React + TypeScript + Tailwind (port 5173)     │
 └──────────────────┬─────────────────────────────┘
                    │  HTTP / JWT
                    ▼
 ┌────────────────────────────────────────────────┐
-│                  Backend                        │
-│  FastAPI + SQLAlchemy (port 8000)               │
-│                                                 │
-│  ┌──────────────┐  ┌──────────────┐             │
-│  │  AI Layer    │  │   ML Layer   │             │
-│  │  (LLM APIs)  │  │  (sklearn)   │             │
-│  └──────────────┘  └──────────────┘             │
+│                  Backend                       │
+│  FastAPI + SQLAlchemy (port 8000)              │
+│                                                │
+│  ┌──────────────┐  ┌──────────────┐            │
+│  │  AI Layer    │  │   ML Layer   │            │
+│  │  (LLM APIs)  │  │  (sklearn)   │            │
+│  └──────────────┘  └──────────────┘            │
 └──────────────────┬─────────────────────────────┘
                    │
                    ▼
 ┌────────────────────────────────────────────────┐
-│              MySQL Database                     │
-│        users  ·  applications  ·  companies     │
+│              MySQL Database                    │
+│       users  ·  applications  ·  companies     │
 └────────────────────────────────────────────────┘
 ```
 
 ---
 
-## 🚀 Setup
+## Setup
 
 ### Prerequisites
 - Python 3.14+
@@ -182,7 +182,7 @@ npm run dev
 
 ---
 
-## 🎯 Design Decisions
+## Design Decisions
 
 ### Why only 3 database tables?
 `users`, `applications`, `companies` — this is **intentional**, not a limitation. Real job trackers (Huntr, Teal, Simplify) use similar schemas. Adding more tables would be over-engineering for the problem domain.
@@ -193,12 +193,12 @@ They solve **different problems**:
 | Task | Tool | Reason |
 |------|------|--------|
 | Understand & generate text | **LLM** | Natural language tasks |
-| Match/classify/cluster | **ML** | Deterministic, fast, private, free |
+| Match / classify / cluster | **ML** | Deterministic, fast, private, free |
 
 The LLM is slow, non-deterministic, and costs API quota. Classical ML runs in milliseconds, is 100% deterministic, and works entirely offline.
 
 ### Why Naive Bayes instead of LLM for status classification?
-- **Deterministic** — same input → same output
+- **Deterministic** — same input yields same output
 - **Instant** — no network round-trip
 - **Explainable** — you can inspect the model's probabilities
 - **Free** — no API quota consumed
@@ -208,7 +208,7 @@ Because the admin's role is **oversight**, not job-seeking. Admin tools focus on
 
 ---
 
-## 📊 Project Stats
+## Project Stats
 
 - **~75 files** across frontend + backend
 - **4 ML algorithms** implemented
@@ -219,17 +219,17 @@ Because the admin's role is **oversight**, not job-seeking. Admin tools focus on
 
 ---
 
-## 📄 License
+## License
 
 This project is licensed under the **MIT License**.
 
 ---
 
-## 👩‍💻 Author
+## Author
 
 **Natalie Hammoud**
 - GitHub: [@nataliehammoud](https://github.com/nataliehammoud)
 
 ---
 
-⭐ If you found this project useful, consider giving it a star!
+If you found this project useful, consider giving it a star.
