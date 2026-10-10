@@ -1,2 +1,13 @@
+fastapi
+uvicorn[standard]
+sqlalchemy
+pymysql
+cryptography
+python-jose[cryptography]
+bcrypt
+python-multipart
+python-dotenv
+openai
+httpx
 scikit-learn
-uvicorn==0.54.0
+pydantic[email]
