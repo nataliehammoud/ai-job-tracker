@@ -255,4 +255,14 @@ This project is licensed under the **MIT License**.
 
 ---
 
+## Copyright
+
+© 2026 Natalie Hammoud. All rights reserved.
+
+This project is for **portfolio and educational purposes**. 
+Commercial use requires explicit permission from the author.
+
+For inquiries: hammoudnatalie98@gmail.com
+---
+
 If you found this project useful, consider giving it a star.
